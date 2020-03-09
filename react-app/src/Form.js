@@ -14,12 +14,12 @@ const Form = (props) => {
 
     return (
         <form id="form" onSubmit={handleSubmit}>
-            <label for="date">Date:</label>
+            <label htmlFor="date">Date:</label>
             <input type="date" id="date" name="earth_date" value={date} onChange={(event) => setDate(event.target.value)} />
 
             <br />
 
-            <label for="camera">Choose a camera:</label>
+            <label htmlFor="camera">Choose a camera:</label>
             <select name="camera" id="camera" value={camera} onChange={(event) => setCamera(event.target.value)}>
                 <option value="">--Please choose an option--</option>
                 <option value="FHAZ">Front Hazard Avoidance Camera</option>

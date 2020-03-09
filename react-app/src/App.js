@@ -34,9 +34,11 @@ const App = () => {
 
             {images.map((img) => (
                 <img
+                    key={img.img_src}
                     src={img.img_src}
-                    width="400"
+                    width="500"
                     title={`${img.earth_date} | ${img.rover.name} - ${img.camera.full_name}`}
+                    alt={`${img.earth_date} | ${img.rover.name} - ${img.camera.full_name}`}
                 />
             ))}
         </div>
