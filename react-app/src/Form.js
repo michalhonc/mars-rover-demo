@@ -1,17 +1,6 @@
 import React from 'react';
 
 const Form = (props) => {
-    const [date, setDate] = React.useState('');
-    const [camera, setCamera] = React.useState('');
-
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        props.callback([
-            ['earth_date', date],
-            ['camera', camera],
-        ]);
-    };
-
     return (
         <form id="form" onSubmit={handleSubmit}>
             <label htmlFor="date">Date:</label>
